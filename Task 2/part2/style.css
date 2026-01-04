@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Input section */
+.input-box {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input {
+    padding: 10px;
+    width: 350px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 16px;
+    cursor: pointer;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Gallery - Column wise layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+/* Image card */
+.image-card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+/* Image */
+.image-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.3s;
+}
+
+.image-card img:hover {
+    transform: scale(1.05);
+}
+
+/* Remove button */
+.remove-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 9px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .image-card img {
+        height: 200px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
