@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Listing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Product Listing Page</h1>
+
+<div class="controls">
+    <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="books">Books</option>
+    </select>
+
+    <select id="sortOption">
+        <option value="default">Sort By</option>
+        <option value="priceLow">Price: Low to High</option>
+        <option value="priceHigh">Price: High to Low</option>
+        <option value="rating">Rating</option>
+    </select>
+</div>
+
+<div class="products" id="productList"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
